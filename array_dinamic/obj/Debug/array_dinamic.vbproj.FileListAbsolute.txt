@@ -8,3 +8,13 @@ F:\Kuliah\tugas vb\array_dinamic\array_dinamic\obj\Debug\array_dinamic.vbproj.Ge
 F:\Kuliah\tugas vb\array_dinamic\array_dinamic\obj\Debug\array_dinamic.exe
 F:\Kuliah\tugas vb\array_dinamic\array_dinamic\obj\Debug\array_dinamic.xml
 F:\Kuliah\tugas vb\array_dinamic\array_dinamic\obj\Debug\array_dinamic.pdb
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\obj\Debug\array_dinamic.exe
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\obj\Debug\array_dinamic.xml
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\obj\Debug\array_dinamic.pdb
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\bin\Debug\array_dinamic.exe
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\bin\Debug\array_dinamic.pdb
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\bin\Debug\array_dinamic.xml
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\obj\Debug\array_dinamic.vbprojResolveAssemblyReference.cache
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\obj\Debug\array_dinamic.Form1.resources
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\obj\Debug\array_dinamic.Resources.resources
+F:\Kuliah\tugas vb\dynamic_array\dynamic_array\array_dinamic\obj\Debug\array_dinamic.vbproj.GenerateResource.Cache

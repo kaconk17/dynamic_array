@@ -5,15 +5,16 @@
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txt_nama.Focus()
+
         ReDim data_array(counter)
+        TextBox_data.Focus()
 
     End Sub
 
 
 
     Private Sub btn_search_req_Click(sender As Object, e As EventArgs) Handles btn_search_req.Click
-        Dim cari As String = txt_cari.Text
+        Dim cari As String = TextBox_data.Text
         Dim n_cari = Len(cari)
         Dim max As Integer = UBound(data_array, 1)
         ListBox1.Items.Clear()
@@ -24,7 +25,7 @@
                 If UCase(cari) = UCase(Mid(data_array(i), j, n_cari)) Then
 
                     ListBox1.Items.Add(data_array(i))
-                    'Exit For
+                    Exit For
                 End If
             Next
         Next
@@ -36,11 +37,7 @@
         End If
     End Sub
 
-    Private Sub txt_cari_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_cari.KeyPress
-        If e.KeyChar = Chr(13) Then
-            btn_search_req.Focus()
-        End If
-    End Sub
+
 
     Private Sub btn_refresh_po_Click(sender As Object, e As EventArgs) Handles btn_refresh_po.Click
         Dim max As Integer = UBound(data_array, 1)
@@ -50,6 +47,7 @@
             ListBox1.Items.Add(data_array(a).ToString)
 
         Next
+        TextBox_data.Text = ""
     End Sub
 
 
@@ -68,5 +66,12 @@
             counter = counter + 1
             txt_nama.Text = ""
         End If
+    End Sub
+
+    Private Sub TextBox_data_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox_data.KeyPress
+        If e.KeyChar = Chr(13) Then
+            btn_search_req.Focus()
+        End If
+
     End Sub
 End Class

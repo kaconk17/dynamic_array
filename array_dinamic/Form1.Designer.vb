@@ -25,13 +25,13 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_cari = New System.Windows.Forms.TextBox()
         Me.btn_search_req = New System.Windows.Forms.Button()
         Me.btn_refresh_po = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btn_simpan = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_nama = New System.Windows.Forms.TextBox()
+        Me.TextBox_data = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,14 +53,6 @@ Partial Class Form1
         Me.Label1.Size = New System.Drawing.Size(25, 13)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Cari"
-        '
-        'txt_cari
-        '
-        Me.txt_cari.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_cari.Location = New System.Drawing.Point(72, 139)
-        Me.txt_cari.Name = "txt_cari"
-        Me.txt_cari.Size = New System.Drawing.Size(129, 20)
-        Me.txt_cari.TabIndex = 12
         '
         'btn_search_req
         '
@@ -130,18 +122,25 @@ Partial Class Form1
         Me.txt_nama.Size = New System.Drawing.Size(133, 20)
         Me.txt_nama.TabIndex = 1
         '
+        'TextBox_data
+        '
+        Me.TextBox_data.Location = New System.Drawing.Point(68, 138)
+        Me.TextBox_data.Name = "TextBox_data"
+        Me.TextBox_data.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox_data.TabIndex = 28
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(465, 413)
+        Me.Controls.Add(Me.TextBox_data)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_refresh_po)
         Me.Controls.Add(Me.btn_search_req)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txt_cari)
         Me.ForeColor = System.Drawing.SystemColors.Control
         Me.Name = "Form1"
         Me.Text = "Dynamic Array"
@@ -153,11 +152,11 @@ Partial Class Form1
     End Sub
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents txt_cari As TextBox
     Friend WithEvents btn_search_req As Button
     Friend WithEvents btn_refresh_po As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents btn_simpan As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents txt_nama As TextBox
+    Friend WithEvents TextBox_data As TextBox
 End Class
