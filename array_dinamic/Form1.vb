@@ -1,12 +1,13 @@
 ﻿Public Class Form1
     Dim data_array() As String
-    Dim jum_index As Integer = 0
+    ' Dim jum_index As Integer = 0
     Dim counter As Integer = 0
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ReDim data_array(counter)
         txt_nama.Focus()
+        ReDim data_array(counter)
+
     End Sub
 
 
@@ -20,7 +21,7 @@
             Dim n_data = Len(data_array(i))
 
             For j As Integer = 1 To n_data
-                If cari = Mid(data_array(i), j, n_cari) Then
+                If UCase(cari) = UCase(Mid(data_array(i), j, n_cari)) Then
 
                     ListBox1.Items.Add(data_array(i))
                     'Exit For
@@ -29,9 +30,9 @@
         Next
     End Sub
 
-    Private Sub txt_nama_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_nama.KeyPress
+    Private Sub txt_nama_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = Chr(13) Then
-            btn_save.Focus()
+            btn_simpan.Focus()
         End If
     End Sub
 
@@ -51,7 +52,9 @@
         Next
     End Sub
 
-    Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
+
+
+    Private Sub btn_simpan_Click(sender As Object, e As EventArgs) Handles btn_simpan.Click
         If counter = 0 Then
 
             data_array(counter) = txt_nama.Text.ToString

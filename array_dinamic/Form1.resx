@@ -168,7 +168,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="btn_save.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_simpan.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAABPNJREFUeF7t
         ncFxE0EQRR0CIRCCCjkAQiADCIUMzE2CC4TgDByCfZZcZTKADEAj9wj7a1szf/+s6FXNq5pL977e6Wkk
